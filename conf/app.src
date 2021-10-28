@@ -1,7 +1,9 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/JeromeDevome/GRR/archive/refs/tags/v.3.4.2b.tar.gz
+SOURCE_SUM=6397265b55b7092b087b5083b3f7aeab159e911982021861a653906c31e5cc85
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
+SOURCE_FILENAME=v.3.4.2b.tar.gz
 SOURCE_EXTRACT=true
+
+
