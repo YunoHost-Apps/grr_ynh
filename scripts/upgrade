@@ -21,6 +21,7 @@ path_url=$(ynh_app_setting_get --app=$app --key=path)
 admin=$(ynh_app_setting_get --app=$app --key=admin)
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
 db_name=$(ynh_app_setting_get --app=$app --key=db_name)
+db_pwd=$(ynh_app_setting_get --app=$app --key=mysqlpwd)
 
 #=================================================
 # CHECK VERSION
@@ -60,6 +61,7 @@ if [ -z "$db_name" ]; then
 	db_name=$(ynh_sanitize_dbid --db_name=$app)
 	ynh_app_setting_set --app=$app --key=db_name --value=$db_name
 fi
+db_user=$db_name
 
 # If final_path doesn't exist, create it
 if [ -z "$final_path" ]; then
@@ -125,6 +127,14 @@ ynh_add_fpm_config
 #=================================================
 ynh_script_progression --message="Updating a configuration file..." --weight=1
 
+ynh_add_config --template="config_ldap.inc.php" --destination="$final_path/include/config_ldap.inc.php"
+ynh_add_config --template="connect.inc.php" --destination="$final_path/include/connect.inc.php"
+
+chmod 400 "$final_path/include/config_ldap.inc.php"
+chmod 400 "$final_path/include/connect.inc.php"
+chown $app:$app "$final_path/include/config_ldap.inc.php"
+chown $app:$app "$final_path/include/connect.inc.php"
+
 ### Same as during install
 ###
 ### The file will automatically be backed-up if it's found to be manually modified (because
@@ -144,6 +154,17 @@ ynh_script_progression --message="Updating a configuration file..." --weight=1
 ###
 ### ynh_replace_string --match_string="match_string" --replace_string="replace_string" --target_file="$final_path/some_config_file"
 ### ynh_store_file_checksum --file="$final_path/some_config_file"
+
+#=================================================
+# UPDATE DATABASE
+#=================================================
+ynh_script_progression --message="Updating database..." --weight=1
+
+phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
+
+pushd $final_path/admin
+php${phpversion} admin_maj.php ""
+popd
 
 #=================================================
 # GENERIC FINALIZATION
