@@ -42,7 +42,7 @@ GRR est entièrement configurable (gestion des horaires, des accés, mails...) e
 - La possibilité de réserver ou de libérer très rapidement des journées entières simultanément sur plusieurs ressources de plusieurs domaines et selon un calendrier.
 
 
-**Version incluse :** 3.4.2b~ynh1
+**Version incluse :** 3.4.3a~ynh1
 
 
 

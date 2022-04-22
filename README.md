@@ -46,7 +46,7 @@ GRR is fully configurable (management of schedules, access, emails ...) and rema
 - The possibility of reserving or freeing very quickly whole days simultaneously on several resources of several domains and according to a calendar.
 
 
-**Shipped version:** 3.4.2b~ynh1
+**Shipped version:** 3.4.3a~ynh1
 
 
 

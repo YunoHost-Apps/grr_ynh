@@ -6,7 +6,7 @@
         "en": "A tool for booking meeting rooms or other resources.",
         "fr": "Un outil de réservation de salles de réunion ou d'autres ressources."
     },
-    "version": "3.4.2b~ynh1",
+    "version": "3.4.3a~ynh1",
     "url": "https://site.devome.com/fr/grr3",
     "upstream": {
         "license": "GPL",
