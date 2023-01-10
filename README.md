@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Grr for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/grr.svg)](https://dash.yunohost.org/appci/app/grr) ![](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/grr.svg)](https://dash.yunohost.org/appci/app/grr) ![Working status](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)  
 [![Install Grr with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=grr)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -48,30 +48,29 @@ GRR is fully configurable (management of schedules, access, emails ...) and rema
 
 **Shipped version:** 3.4.3a~ynh1
 
-
-
 ## Screenshots
 
-![](./doc/screenshots/home.png)
+![Screenshot of Grr](./doc/screenshots/home.png)
 
 ## Documentation and resources
 
-* Official app website: https://site.devome.com/fr/grr3
-* Official user documentation: https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations
-* Official admin documentation: https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations
-* Upstream app code repository: https://github.com/JeromeDevome/GRR
-* YunoHost documentation for this app: https://yunohost.org/app_grr
-* Report a bug: https://github.com/YunoHost-Apps/grr_ynh/issues
+* Official app website: <https://site.devome.com/fr/grr3>
+* Official user documentation: <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
+* Official admin documentation: <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
+* Upstream app code repository: <https://github.com/JeromeDevome/GRR>
+* YunoHost documentation for this app: <https://yunohost.org/app_grr>
+* Report a bug: <https://github.com/YunoHost-Apps/grr_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/grr_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/grr_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade grr -u https://github.com/YunoHost-Apps/grr_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
