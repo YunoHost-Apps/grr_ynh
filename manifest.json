@@ -9,7 +9,7 @@
     "version": "3.4.3a~ynh1",
     "url": "https://site.devome.com/fr/grr3",
     "upstream": {
-        "license": "GPL",
+        "license": "AGPL-3.0-only",
         "website": "https://site.devome.com/fr/grr3",
         "demo": "",
         "admindoc": "https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations",
