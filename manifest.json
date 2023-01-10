@@ -3,8 +3,8 @@
     "id": "grr",
     "packaging_format": 1,
     "description": {
-        "en": "A tool for booking meeting rooms or other resources.",
-        "fr": "Un outil de réservation de salles de réunion ou d'autres ressources."
+        "en": "Tool for booking meeting rooms or other resources",
+        "fr": "Outil de réservation de salles de réunion ou d'autres ressources"
     },
     "version": "3.4.3a~ynh1",
     "url": "https://site.devome.com/fr/grr3",
@@ -22,7 +22,7 @@
         "email": "mennetrier@smart4.io"
     },
     "requirements": {
-        "yunohost": ">= 4.1.3"
+        "yunohost": ">= 11.0.9"
     },
     "multi_instance": true,
     "services": [
