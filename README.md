@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # Grr for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/grr.svg)](https://dash.yunohost.org/appci/app/grr) ![](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/grr.svg)](https://dash.yunohost.org/appci/app/grr) ![Working status](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)  
 [![Install Grr with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=grr)
 
 *[Lire ce readme en français.](./README_fr.md)*
@@ -15,63 +15,34 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-GRR is a resource reservation management system (rooms, equipment, vehicle, staff) but it can also be used as a shared mini-diary. Developed in php and responsive, which allows it to be accessible, from anywhere and on any type of equipment (PC, Mac, tablet, phone, TV ...).
-
-GRR is fully configurable (management of schedules, access, emails ...) and remains easy to use.
-
-### Features
-
-- Access to the shared management tool via any web browser,
-- The administration of several types of shared resources (rooms, cars, equipment, etc.),
-- The management of reservations for these resources (creation, modification, deletion),
-- Management of the type of access to a resource; access restricted to certain users or not,
-- The possibility of making periodic reservations,
-- The possibility of configuring a calendar of "public holidays", inaccessible to reservations,
-- The possibility of making reservations "subject to", to be confirmed before a fixed date,
-- The possibility of making reservations "in moderation",
-- The possibility of making reservations on behalf of other users or external persons
-- The possibility of defining, domain by domain, additional fields,
-- The possibility of defining "cycle days" (see documentation),
-- Fine management of sending automatic emails,
-- The delegation to users of the administration of certain domains,
-- Delegation to users of the management of reservations for certain resources,
-- The possibility for a manager to display a reservation as "in use",
-- The possibility of temporarily making a resource unavailable for maintenance for example,
-- The ability to configure a presentation sheet with an image for each resource,
-- The visualization of the planning of resource reservations in different forms,
-- The possibility of configuring the type of access to the application (obligation or not to connect to access the site),
-- The possibility of customizing by domain the display parameters of the reservation schedule (start and end times of the day, smallest bookable block, ... or pre-defined time slots).
-- The possibility of setting, for each resource, a maximum number of days beyond which the user cannot reserve or modify an existing reservation.
-- The possibility of setting, for each resource, a time, below which the user cannot reserve or modify an existing reservation.
-- The possibility of reserving or freeing very quickly whole days simultaneously on several resources of several domains and according to a calendar.
+GRR is a resource reservation management system (rooms, equipment, vehicle, staff) but it can also be used as a shared mini-diary. Developed in php and responsive, which allows it to be accessible, from anywhere and on any type of equipment (PC, Mac, tablet, phone, TV...).
 
 
 **Shipped version:** 3.4.3a~ynh1
 
-
-
 ## Screenshots
 
-![](./doc/screenshots/home.png)
+![Screenshot of Grr](./doc/screenshots/home.png)
 
 ## Documentation and resources
 
-* Official app website: https://site.devome.com/fr/grr3
-* Official user documentation: https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations
-* Official admin documentation: https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations
-* Upstream app code repository: https://github.com/JeromeDevome/GRR
-* YunoHost documentation for this app: https://yunohost.org/app_grr
-* Report a bug: https://github.com/YunoHost-Apps/grr_ynh/issues
+* Official app website: <https://site.devome.com/fr/grr3>
+* Official user documentation: <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
+* Official admin documentation: <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
+* Upstream app code repository: <https://github.com/JeromeDevome/GRR>
+* YunoHost documentation for this app: <https://yunohost.org/app_grr>
+* Report a bug: <https://github.com/YunoHost-Apps/grr_ynh/issues>
 
 ## Developer info
 
 Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/grr_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
-```
+
+``` bash
 sudo yunohost app install https://github.com/YunoHost-Apps/grr_ynh/tree/testing --debug
 or
 sudo yunohost app upgrade grr -u https://github.com/YunoHost-Apps/grr_ynh/tree/testing --debug
 ```
 
-**More info regarding app packaging:** https://yunohost.org/packaging_apps
+**More info regarding app packaging:** <https://yunohost.org/packaging_apps>
