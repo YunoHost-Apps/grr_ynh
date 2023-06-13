@@ -1,9 +1,0 @@
-SOURCE_URL=https://github.com/JeromeDevome/GRR/archive/refs/tags/v3.4.3a.tar.gz
-SOURCE_SUM=e46721ac15f426585d7b058db620fc7c600016241963aeb751b82accd608bca2
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=v3.4.3a.tar.gz
-SOURCE_EXTRACT=true
-
-
