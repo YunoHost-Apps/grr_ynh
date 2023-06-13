@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # Grr for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/grr.svg)](https://dash.yunohost.org/appci/app/grr) ![Working status](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/grr.svg)](https://dash.yunohost.org/appci/app/grr) ![Working status](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)
+
 [![Install Grr with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=grr)
 
 *[Lire ce readme en français.](./README_fr.md)*
