@@ -1,0 +1,64 @@
+packaging_format = 2
+
+id = "grr"
+name = "Grr"
+description.en = "Tool for booking meeting rooms or other resources"
+description.fr = "Outil de réservation de salles de réunion ou d'autres ressources"
+
+version = "3.5.1~ynh1"
+
+maintainers = ["Sébastien Menentrier"]
+
+[upstream]
+license = "AGPL-3.0-only"
+website = "https://site.devome.com/fr/grr3"
+demo = ""
+admindoc = "https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations"
+userdoc = "https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations"
+code = "https://github.com/JeromeDevome/GRR"
+
+[integration]
+yunohost = ">= 11.1.20"
+architectures = "all"
+multi_instance = true
+ldap = true
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/grr"
+
+    [install.admin]
+    type = "user"
+
+    [install.init_main_permission]
+    help.en = "A public tool means that anybody will be able to visualize public booked resources."
+    help.fr = "Un outil public signifie que n'importe qui pourra visualiser les réservation public de ressources"
+    type = "group"
+    default = false
+
+[resources]
+        [resources.sources.main]
+        url = "https://github.com/JeromeDevome/GRR/archive/refs/tags/v3.5.1.tar.gz"
+        sha256 = "7c0f341e961b61a16905f6d7c2f296e7166313f5a309999a380fbacf26e1d9a6"
+        autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = "mariadb-server php8.2-ldap php8.2-gd php8.2-mbstring php8.2-mysqli php8.2-mysqlnd php8.2-xml"
+
+    [resources.database]
+    type = "mysql"

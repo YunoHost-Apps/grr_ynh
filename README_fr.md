@@ -5,31 +5,32 @@ It shall NOT be edited by hand.
 
 # Grr pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/grr.svg)](https://dash.yunohost.org/appci/app/grr) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/grr.svg)](https://dash.yunohost.org/appci/app/grr) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)
+
 [![Installer Grr avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=grr)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Grr rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Grr rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 GRR est un système de gestion de réservation de ressources (salles, équipements, véhicule, personnels) mais il peut également être utilisé comme mini-agenda partagé. Développé en php et en responsive, ce qui lui permet d'être accessible, de n'importe où et sur tout type d'équipement (PC, Mac, tablette, téléphone, TV...).
 
 
-**Version incluse :** 3.4.3a~ynh1
+**Version incluse :** 3.5.1~ynh1
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de Grr](./doc/screenshots/home.png)
+![Capture d’écran de Grr](./doc/screenshots/home.png)
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://site.devome.com/fr/grr3>
+* Site officiel de l’app : <https://site.devome.com/fr/grr3>
 * Documentation officielle utilisateur : <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
-* Documentation officielle de l'admin : <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
-* Dépôt de code officiel de l'app : <https://github.com/JeromeDevome/GRR>
+* Documentation officielle de l’admin : <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
+* Dépôt de code officiel de l’app : <https://github.com/JeromeDevome/GRR>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_grr>
 * Signaler un bug : <https://github.com/YunoHost-Apps/grr_ynh/issues>
 
@@ -45,4 +46,4 @@ ou
 sudo yunohost app upgrade grr -u https://github.com/YunoHost-Apps/grr_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
