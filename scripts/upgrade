@@ -64,9 +64,8 @@ chown $app:$app "$install_dir/include/connect.inc.php"
 #=================================================
 ynh_script_progression --message="Updating database..." --weight=1
 
-#REMOVEME? phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
-
 pushd $install_dir/installation
+	ynh_write_var_in_file --file="$install_dir/installation/maj.php" --key="majscript" --value=true
 	php${phpversion} maj.php ""
 popd
 
