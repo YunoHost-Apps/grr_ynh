@@ -18,7 +18,7 @@ userdoc = "https://site.devome.com/fr/grr/telechargement/category/2-informations
 code = "https://github.com/JeromeDevome/GRR"
 
 [integration]
-yunohost = ">= 11.1.20"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap = true
@@ -58,7 +58,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server php8.2-ldap php8.2-gd php8.2-mbstring php8.2-mysqli php8.2-mysqlnd php8.2-xml php8.2-intl"
+    packages = "mariadb-server, php8.2-ldap, php8.2-gd, php8.2-mbstring, php8.2-mysqli, php8.2-mysqlnd, php8.2-xml, php8.2-intl"
 
     [resources.database]
     type = "mysql"
