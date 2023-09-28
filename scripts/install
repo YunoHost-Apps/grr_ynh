@@ -35,8 +35,8 @@ ynh_add_fpm_config
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="config_ldap.inc.php" --destination="$install_dir/include/config_ldap.inc.php"
-ynh_add_config --template="connect.inc.php" --destination="$install_dir/include/connect.inc.php"
+ynh_add_config --template="config_ldap.inc.php" --destination="$install_dir/personnalisation/config_ldap.inc.php"
+ynh_add_config --template="connect.inc.php" --destination="$install_dir/personnalisation/connect.inc.php"
 
 chmod 400 "$install_dir/include/config_ldap.inc.php"
 chmod 400 "$install_dir/include/connect.inc.php"
