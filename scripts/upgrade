@@ -49,10 +49,10 @@ ynh_script_progression --message="Updating a configuration file..." --weight=1
 ynh_add_config --template="config_ldap.inc.php" --destination="$install_dir/personnalisation/config_ldap.inc.php"
 ynh_add_config --template="connect.inc.php" --destination="$install_dir/personnalisation/connect.inc.php"
 
-chmod 400 "$install_dir/include/config_ldap.inc.php"
-chmod 400 "$install_dir/include/connect.inc.php"
-chown $app:$app "$install_dir/include/config_ldap.inc.php"
-chown $app:$app "$install_dir/include/connect.inc.php"
+chmod 400 "$install_dir/personnalisation/config_ldap.inc.php"
+chmod 400 "$install_dir/personnalisation/connect.inc.php"
+chown $app:$app "$install_dir/personnalisation/config_ldap.inc.php"
+chown $app:$app "$install_dir/personnalisation/connect.inc.php"
 
 #=================================================
 # UPDATE DATABASE
