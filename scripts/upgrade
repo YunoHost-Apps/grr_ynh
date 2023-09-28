@@ -46,21 +46,22 @@ ynh_add_fpm_config
 #=================================================
 ynh_script_progression --message="Updating a configuration file..." --weight=1
 
-ynh_add_config --template="config_ldap.inc.php" --destination="$install_dir/include/config_ldap.inc.php"
-ynh_add_config --template="connect.inc.php" --destination="$install_dir/include/connect.inc.php"
+ynh_add_config --template="config_ldap.inc.php" --destination="$install_dir/personnalisation/config_ldap.inc.php"
+ynh_add_config --template="connect.inc.php" --destination="$install_dir/personnalisation/connect.inc.php"
 
-chmod 400 "$install_dir/include/config_ldap.inc.php"
-chmod 400 "$install_dir/include/connect.inc.php"
-chown $app:$app "$install_dir/include/config_ldap.inc.php"
-chown $app:$app "$install_dir/include/connect.inc.php"
+chmod 400 "$install_dir/personnalisation/config_ldap.inc.php"
+chmod 400 "$install_dir/personnalisation/connect.inc.php"
+chown $app:$app "$install_dir/personnalisation/config_ldap.inc.php"
+chown $app:$app "$install_dir/personnalisation/connect.inc.php"
 
 #=================================================
 # UPDATE DATABASE
 #=================================================
 ynh_script_progression --message="Updating database..." --weight=1
 
-pushd $install_dir/admin
-	php${phpversion} admin_maj.php ""
+pushd $install_dir/installation
+	ynh_write_var_in_file --file="$install_dir/installation/maj.php" --key="majscript" --value=true
+	php${phpversion} maj.php ""
 popd
 
 #=================================================
