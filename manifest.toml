@@ -5,7 +5,7 @@ name = "Grr"
 description.en = "Tool for booking meeting rooms or other resources"
 description.fr = "Outil de réservation de salles de réunion ou d'autres ressources"
 
-version = "3.5.1~ynh1"
+version = "4.1.1~ynh1"
 
 maintainers = ["Sébastien Menentrier"]
 
@@ -18,7 +18,7 @@ userdoc = "https://site.devome.com/fr/grr/telechargement/category/2-informations
 code = "https://github.com/JeromeDevome/GRR"
 
 [integration]
-yunohost = ">= 11.1.20"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap = true
@@ -46,8 +46,8 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/JeromeDevome/GRR/archive/refs/tags/v3.5.1.tar.gz"
-        sha256 = "7c0f341e961b61a16905f6d7c2f296e7166313f5a309999a380fbacf26e1d9a6"
+        url = "https://github.com/JeromeDevome/GRR/archive/refs/tags/v4.1.1.tar.gz"
+        sha256 = "e6197c33db025510237d6fd5b823dac452c7f5d2a2dc72e548ad840b3b7ba122"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
@@ -58,7 +58,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server php8.2-ldap php8.2-gd php8.2-mbstring php8.2-mysqli php8.2-mysqlnd php8.2-xml"
+    packages = "mariadb-server, php8.2-ldap, php8.2-gd, php8.2-mbstring, php8.2-mysqli, php8.2-mysqlnd, php8.2-xml, php8.2-intl"
 
     [resources.database]
     type = "mysql"

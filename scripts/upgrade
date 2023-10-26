@@ -38,36 +38,30 @@ ynh_script_progression --message="Upgrading NGINX web server configuration..." -
 # Create a dedicated NGINX config
 ynh_add_nginx_config
 
-#=================================================
-# PHP-FPM CONFIGURATION
-#=================================================
-ynh_script_progression --message="Upgrading PHP-FPM configuration..." --weight=1
-
 # Create a dedicated PHP-FPM config
-ynh_add_fpm_config --usage=low --footprint=low
+ynh_add_fpm_config
 
 #=================================================
 # UPDATE A CONFIG FILE
 #=================================================
 ynh_script_progression --message="Updating a configuration file..." --weight=1
 
-ynh_add_config --template="config_ldap.inc.php" --destination="$install_dir/include/config_ldap.inc.php"
-ynh_add_config --template="connect.inc.php" --destination="$install_dir/include/connect.inc.php"
+ynh_add_config --template="config_ldap.inc.php" --destination="$install_dir/personnalisation/config_ldap.inc.php"
+ynh_add_config --template="connect.inc.php" --destination="$install_dir/personnalisation/connect.inc.php"
 
-chmod 400 "$install_dir/include/config_ldap.inc.php"
-chmod 400 "$install_dir/include/connect.inc.php"
-chown $app:$app "$install_dir/include/config_ldap.inc.php"
-chown $app:$app "$install_dir/include/connect.inc.php"
+chmod 400 "$install_dir/personnalisation/config_ldap.inc.php"
+chmod 400 "$install_dir/personnalisation/connect.inc.php"
+chown $app:$app "$install_dir/personnalisation/config_ldap.inc.php"
+chown $app:$app "$install_dir/personnalisation/connect.inc.php"
 
 #=================================================
 # UPDATE DATABASE
 #=================================================
 ynh_script_progression --message="Updating database..." --weight=1
 
-#REMOVEME? phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
-
-pushd $install_dir/admin
-	php${phpversion} admin_maj.php ""
+pushd $install_dir/installation
+	ynh_write_var_in_file --file="$install_dir/installation/maj.php" --key="majscript" --value=true
+	php${phpversion} maj.php ""
 popd
 
 #=================================================
