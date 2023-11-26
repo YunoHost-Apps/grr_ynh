@@ -31,7 +31,7 @@ GRR est un système de gestion de réservation de ressources (salles, équipemen
 * Documentation officielle utilisateur : <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
 * Documentation officielle de l’admin : <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
 * Dépôt de code officiel de l’app : <https://github.com/JeromeDevome/GRR>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_grr>
+* YunoHost Store: <https://apps.yunohost.org/app/grr>
 * Signaler un bug : <https://github.com/YunoHost-Apps/grr_ynh/issues>
 
 ## Informations pour les développeurs
