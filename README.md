@@ -19,7 +19,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 GRR is a resource reservation management system (rooms, equipment, vehicle, staff) but it can also be used as a shared mini-diary. Developed in php and responsive, which allows it to be accessible, from anywhere and on any type of equipment (PC, Mac, tablet, phone, TV...).
 
 
-**Shipped version:** 4.1.1~ynh1
+**Shipped version:** 4.2.1~ynh1
 
 ## Screenshots
 
@@ -31,7 +31,7 @@ GRR is a resource reservation management system (rooms, equipment, vehicle, staf
 * Official user documentation: <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
 * Official admin documentation: <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
 * Upstream app code repository: <https://github.com/JeromeDevome/GRR>
-* YunoHost documentation for this app: <https://yunohost.org/app_grr>
+* YunoHost Store: <https://apps.yunohost.org/app/grr>
 * Report a bug: <https://github.com/YunoHost-Apps/grr_ynh/issues>
 
 ## Developer info
