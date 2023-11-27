@@ -19,7 +19,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 GRR est un système de gestion de réservation de ressources (salles, équipements, véhicule, personnels) mais il peut également être utilisé comme mini-agenda partagé. Développé en php et en responsive, ce qui lui permet d'être accessible, de n'importe où et sur tout type d'équipement (PC, Mac, tablette, téléphone, TV...).
 
 
-**Version incluse :** 4.1.1~ynh1
+**Version incluse :** 4.2.1~ynh1
 
 ## Captures d’écran
 
@@ -31,7 +31,7 @@ GRR est un système de gestion de réservation de ressources (salles, équipemen
 * Documentation officielle utilisateur : <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
 * Documentation officielle de l’admin : <https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations>
 * Dépôt de code officiel de l’app : <https://github.com/JeromeDevome/GRR>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_grr>
+* YunoHost Store: <https://apps.yunohost.org/app/grr>
 * Signaler un bug : <https://github.com/YunoHost-Apps/grr_ynh/issues>
 
 ## Informations pour les développeurs
