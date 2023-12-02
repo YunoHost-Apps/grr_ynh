@@ -5,7 +5,7 @@ name = "Grr"
 description.en = "Tool for booking meeting rooms or other resources"
 description.fr = "Outil de réservation de salles de réunion ou d'autres ressources"
 
-version = "4.1.1~ynh1"
+version = "4.2.1~ynh1"
 
 maintainers = ["Sébastien Menentrier"]
 
@@ -21,8 +21,11 @@ code = "https://github.com/JeromeDevome/GRR"
 yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
+
 ldap = true
+
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -42,12 +45,12 @@ ram.runtime = "50M"
     help.en = "A public tool means that anybody will be able to visualize public booked resources."
     help.fr = "Un outil public signifie que n'importe qui pourra visualiser les réservation public de ressources"
     type = "group"
-    default = false
+    default = "visitors"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/JeromeDevome/GRR/archive/refs/tags/v4.1.1.tar.gz"
-        sha256 = "e6197c33db025510237d6fd5b823dac452c7f5d2a2dc72e548ad840b3b7ba122"
+        url = "https://github.com/JeromeDevome/GRR/archive/refs/tags/v4.2.1.tar.gz"
+        sha256 = "13140157bb255117ee8ead55e911254e83752fb39c7adad6d1928d62cd344a02"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
