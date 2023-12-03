@@ -19,7 +19,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 GRR est un système de gestion de réservation de ressources (salles, équipements, véhicule, personnels) mais il peut également être utilisé comme mini-agenda partagé. Développé en php et en responsive, ce qui lui permet d'être accessible, de n'importe où et sur tout type d'équipement (PC, Mac, tablette, téléphone, TV...).
 
 
-**Version incluse :** 4.2.1~ynh1
+**Version incluse :** 4.2.2~ynh1
 
 ## Captures d’écran
 
