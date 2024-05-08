@@ -19,7 +19,7 @@ NON debe editarse manualmente.
 GRR is a resource reservation management system (rooms, equipment, vehicle, staff) but it can also be used as a shared mini-diary. Developed in php and responsive, which allows it to be accessible, from anywhere and on any type of equipment (PC, Mac, tablet, phone, TV...).
 
 
-**Versión proporcionada:** 4.3.3~ynh1
+**Versión proporcionada:** 4.3.4~ynh1
 
 ## Capturas de pantalla
 
