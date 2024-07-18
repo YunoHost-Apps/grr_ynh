@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Grr YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/grr.svg)](https://dash.yunohost.org/appci/app/grr) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/grr.svg)](https://ci-apps.yunohost.org/ci/apps/grr/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)
 
 [![Instalatu Grr YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=grr)
 
@@ -19,7 +19,7 @@ EZ editatu eskuz.
 GRR is a resource reservation management system (rooms, equipment, vehicle, staff) but it can also be used as a shared mini-diary. Developed in php and responsive, which allows it to be accessible, from anywhere and on any type of equipment (PC, Mac, tablet, phone, TV...).
 
 
-**Paketatutako bertsioa:** 4.3.5~ynh1
+**Paketatutako bertsioa:** 4.3.6~ynh1
 
 ## Pantaila-argazkiak
 
