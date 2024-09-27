@@ -11,7 +11,7 @@ ynh_script_progression "Setting up source files..."
 ynh_setup_source --dest_dir="$install_dir"
 
 #=================================================
-# NGINX CONFIGURATION
+# SYSTEM CONFIGURATION
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
 
@@ -20,9 +20,9 @@ ynh_config_add_nginx
 ynh_config_add_phpfpm
 
 #=================================================
-# ADD A CONFIGURATION
+# APP INITIAL CONFIGURATION
 #=================================================
-ynh_script_progression "Adding $app's configuration..."
+ynh_script_progression "Adding $app's configuration files..."
 
 ynh_config_add --template="config_ldap.inc.php" --destination="$install_dir/personnalisation/config_ldap.inc.php"
 ynh_config_add --template="connect.inc.php" --destination="$install_dir/personnalisation/connect.inc.php"
