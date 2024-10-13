@@ -19,7 +19,7 @@ No se debe editar a mano.
 GRR is a resource reservation management system (rooms, equipment, vehicle, staff) but it can also be used as a shared mini-diary. Developed in php and responsive, which allows it to be accessible, from anywhere and on any type of equipment (PC, Mac, tablet, phone, TV...).
 
 
-**Versión actual:** 4.3.6~ynh1
+**Versión actual:** 4.3.7~ynh1
 
 ## Capturas
 
@@ -36,7 +36,7 @@ GRR is a resource reservation management system (rooms, equipment, vehicle, staf
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/grr_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/grr_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
