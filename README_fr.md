@@ -19,7 +19,7 @@ Il NE doit PAS être modifié à la main.
 GRR est un système de gestion de réservation de ressources (salles, équipements, véhicule, personnels) mais il peut également être utilisé comme mini-agenda partagé. Développé en php et en responsive, ce qui lui permet d'être accessible, de n'importe où et sur tout type d'équipement (PC, Mac, tablette, téléphone, TV...).
 
 
-**Version incluse :** 4.3.6~ynh1
+**Version incluse :** 4.3.8~ynh1
 
 ## Captures d’écran
 
