@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Grr
 
-[![集成程度](https://dash.yunohost.org/integration/grr.svg)](https://ci-apps.yunohost.org/ci/apps/grr/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/grr.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/grr.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/grr)](https://ci-apps.yunohost.org/ci/apps/grr/)
+![工作状态](https://apps.yunohost.org/badge/state/grr)
+![维护状态](https://apps.yunohost.org/badge/maintained/grr)
 
 [![使用 YunoHost 安装 Grr](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=grr)
 
@@ -19,7 +21,7 @@
 GRR is a resource reservation management system (rooms, equipment, vehicle, staff) but it can also be used as a shared mini-diary. Developed in php and responsive, which allows it to be accessible, from anywhere and on any type of equipment (PC, Mac, tablet, phone, TV...).
 
 
-**分发版本：** 4.3.6~ynh1
+**分发版本：** 4.3.9~ynh1
 
 ## 截图
 
