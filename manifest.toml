@@ -46,10 +46,6 @@ ram.runtime = "50M"
     default = "visitors"
 
     [install.compagny_name]
-    type = "group"
-    default = "visitors"
-
-    [install.compagny_name]
     ask.en = "Choose a name for GRR board"
     ask.fr = "Choisissez un nom pour tableau GRR"
     type = "string"
