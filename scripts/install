@@ -8,8 +8,8 @@ source /usr/share/yunohost/helpers
 #=================================================
 
 email=$(ynh_user_get_info --username=$admin --key=mail)
-lastname=$(ynh_user_get_info --username=$user --key=lastname)
-firstname=$(ynh_user_get_info --username=$user --key=firstname)
+lastname=$(ynh_user_get_info --username=$admin --key=lastname)
+firstname=$(ynh_user_get_info --username=$admin --key=firstname)
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
