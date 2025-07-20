@@ -27,10 +27,11 @@ ynh_script_progression "Adding $app's configuration files..."
 ynh_config_add --template="config_ldap.inc.php" --destination="$install_dir/personnalisation/config_ldap.inc.php"
 ynh_config_add --template="connect.inc.php" --destination="$install_dir/personnalisation/connect.inc.php"
 
-mysql --default-character-set=latin1 -u $db_user -p${db_pwd} $db_name < $install_dir/installation/tables.my.sql
+ynh_mysql_db_shell < $install_dir/installation/tables.my.sql
 
 ynh_config_add --template="grr_ldap_sso.sql" --destination="/tmp/grr_ldap_sso.sql"
-mysql -u $db_user -p${db_pwd} $db_name < /tmp/grr_ldap_sso.sql
+
+ynh_mysql_db_shell < /tmp/grr_ldap_sso.sql
 rm /tmp/grr_ldap_sso.sql
 
 #=================================================
