@@ -45,6 +45,15 @@ ram.runtime = "50M"
     type = "group"
     default = "visitors"
 
+    [install.compagny_name]
+    type = "group"
+    default = "visitors"
+
+    [install.compagny_name]
+    ask.en = "Choose a name for GRR board"
+    ask.fr = "Choisissez un nom pour tableau GRR"
+    type = "string"
+
 [resources]
         [resources.sources.main]
         url = "https://github.com/JeromeDevome/GRR/archive/refs/tags/v4.4.0.tar.gz"

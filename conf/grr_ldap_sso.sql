@@ -20,7 +20,7 @@ DELETE FROM grr_utilisateurs WHERE login = "ADMINISTRATEUR";
 
 INSERT INTO grr_setting (`name`, `value`) VALUES
 ('cacher_lien_deconnecter', 'y'),
-('company', 'YunoHost'),
+('company', '__COMPAGNY_NAME__'),
 ('grr_url', 'https://__DOMAIN____PATH__'),
 ('ldap_champ_email', 'mail'),
 ('ldap_champ_nom', 'sn'),
