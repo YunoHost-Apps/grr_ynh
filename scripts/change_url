@@ -14,7 +14,7 @@ ynh_config_change_url_nginx
 # SPECIFIC MODIFICATIONS
 #=================================================
 
-mysql -u $db_user -p${db_pwd} -e "UPDATE ${db_name}.grr_setting SET \`value\` = 'https://${new_domain}${new_path}' WHERE \`name\` = 'grr_url';"
+ynh_mysql_db_shell <<< "UPDATE ${db_name}.grr_setting SET \`value\` = 'https://${new_domain}${new_path}' WHERE \`name\` = 'grr_url';"
 
 #=================================================
 # END OF SCRIPT
