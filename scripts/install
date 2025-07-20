@@ -1,56 +1,41 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=1
+ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
-chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
+#=================================================
+# SYSTEM CONFIGURATION
+#=================================================
+ynh_script_progression "Adding system configurations related to $app..."
+
+ynh_config_add_nginx
+
+ynh_config_add_phpfpm
 
 #=================================================
-# NGINX CONFIGURATION
+# APP INITIAL CONFIGURATION
 #=================================================
-ynh_script_progression --message="Adding system configurations related to $app..." --weight=1
+ynh_script_progression "Adding $app's configuration files..."
 
-ynh_add_nginx_config
+ynh_config_add --template="config_ldap.inc.php" --destination="$install_dir/personnalisation/config_ldap.inc.php"
+ynh_config_add --template="connect.inc.php" --destination="$install_dir/personnalisation/connect.inc.php"
 
-ynh_add_fpm_config
+ynh_mysql_db_shell < $install_dir/installation/tables.my.sql
 
-#=================================================
-# SPECIFIC SETUP
-#=================================================
-# ADD A CONFIGURATION
-#=================================================
-ynh_script_progression --message="Adding a configuration file..." --weight=1
+ynh_config_add --template="grr_ldap_sso.sql" --destination="/tmp/grr_ldap_sso.sql"
 
-ynh_add_config --template="config_ldap.inc.php" --destination="$install_dir/personnalisation/config_ldap.inc.php"
-ynh_add_config --template="connect.inc.php" --destination="$install_dir/personnalisation/connect.inc.php"
-
-chmod 400 "$install_dir/personnalisation/config_ldap.inc.php"
-chmod 400 "$install_dir/personnalisation/connect.inc.php"
-chown $app:$app "$install_dir/personnalisation/config_ldap.inc.php"
-chown $app:$app "$install_dir/personnalisation/connect.inc.php"
-
-mysql --default-character-set=latin1 -u $db_user -p${db_pwd} $db_name < $install_dir/installation/tables.my.sql
-
-ynh_add_config --template="grr_ldap_sso.sql" --destination="/tmp/grr_ldap_sso.sql"
-mysql -u $db_user -p${db_pwd} $db_name < /tmp/grr_ldap_sso.sql
+ynh_mysql_db_shell < /tmp/grr_ldap_sso.sql
 rm /tmp/grr_ldap_sso.sql
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"
