@@ -34,7 +34,7 @@ INSERT INTO grr_setting (`name`, `value`) VALUES
 ('url_disconnect', ''),
 ('Url_portail_sso', '');
 
-INSERT INTO grr_utilisateurs (`login`, `nom`, `statut`, `etat`, `source`, `commentaire`) VALUES
-('__ADMIN__', '__ADMIN__', 'administrateur', 'actif', 'ext', '');
+INSERT INTO grr_utilisateurs (`login`, `nom`, `prenom`, `email`, `statut`, `etat`, `source`, `commentaire`) VALUES
+('__ADMIN__', '__FIRSTNAME__', '__LASTNAME__', '__EMAIL__','administrateur', 'actif', 'ext', '');
 
 COMMIT;
