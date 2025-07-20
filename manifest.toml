@@ -42,8 +42,6 @@ ram.runtime = "50M"
     type = "user"
 
     [install.init_main_permission]
-    help.en = "A public tool means that anybody will be able to visualize public booked resources."
-    help.fr = "Un outil public signifie que n'importe qui pourra visualiser les réservation public de ressources"
     type = "group"
     default = "visitors"
 
