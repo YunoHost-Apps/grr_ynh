@@ -5,7 +5,7 @@ name = "Grr"
 description.en = "Tool for booking meeting rooms or other resources"
 description.fr = "Outil de réservation de salles de réunion ou d'autres ressources"
 
-version = "4.3.9~ynh1"
+version = "4.4.2~ynh1"
 
 maintainers = ["Sébastien Menentrier"]
 
@@ -18,7 +18,7 @@ userdoc = "https://site.devome.com/fr/grr/telechargement/category/2-informations
 code = "https://github.com/JeromeDevome/GRR"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -42,15 +42,13 @@ ram.runtime = "50M"
     type = "user"
 
     [install.init_main_permission]
-    help.en = "A public tool means that anybody will be able to visualize public booked resources."
-    help.fr = "Un outil public signifie que n'importe qui pourra visualiser les réservation public de ressources"
     type = "group"
     default = "visitors"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/JeromeDevome/GRR/archive/refs/tags/v4.3.9.tar.gz"
-        sha256 = "dabf28844607ca2f2a481cadf9e9c57456bcb7b54d408d3fd80ba2d5f467fe42"
+        url = "https://github.com/JeromeDevome/GRR/archive/refs/tags/v4.4.2.tar.gz"
+        sha256 = "b7a05760cb323da4f83dc89396e33abdb224db0d3656f0e0f4e227d59845e92a"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
@@ -62,7 +60,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server, php8.2-ldap, php8.2-gd, php8.2-mbstring, php8.2-mysqli, php8.2-mysqlnd, php8.2-xml, php8.2-intl"
+    packages = "mariadb-server, php8.4-ldap, php8.4-gd, php8.4-mbstring, php8.4-mysqli, php8.4-mysqlnd, php8.4-xml, php8.4-intl"
 
     [resources.database]
     type = "mysql"
