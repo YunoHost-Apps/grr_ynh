@@ -18,7 +18,7 @@ userdoc = "https://site.devome.com/fr/grr/telechargement/category/2-informations
 code = "https://github.com/JeromeDevome/GRR"
 
 [integration]
-yunohost = ">= 12.1.17"
+yunohost = ">= 12.1.38"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
