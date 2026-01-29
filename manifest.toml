@@ -12,7 +12,6 @@ maintainers = ["Sébastien Menentrier"]
 [upstream]
 license = "AGPL-3.0-only"
 website = "https://site.devome.com/fr/grr3"
-demo = ""
 admindoc = "https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations"
 userdoc = "https://site.devome.com/fr/grr/telechargement/category/2-informations-documentations"
 code = "https://github.com/JeromeDevome/GRR"
