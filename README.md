@@ -11,7 +11,7 @@ It shall NOT be edited by hand.
 Tool for booking meeting rooms or other resources
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://site.devome.com/fr/grr3)
-[![Version: 4.5.1~ynh1](https://img.shields.io/badge/Version-4.5.1~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/grr/)
+[![Version: 4.5.2~ynh1](https://img.shields.io/badge/Version-4.5.2~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/grr/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/grr"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
