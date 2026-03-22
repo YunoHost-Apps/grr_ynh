@@ -31,7 +31,7 @@ ynh_mysql_db_shell < $install_dir/installation/tables.my.sql
 ynh_config_add --template="grr_ldap_sso.sql" --destination="/tmp/grr_ldap_sso.sql"
 
 ynh_mysql_db_shell < /tmp/grr_ldap_sso.sql
-rm /tmp/grr_ldap_sso.sql
+ynh_safe_rm /tmp/grr_ldap_sso.sql
 
 #=================================================
 # END OF SCRIPT
