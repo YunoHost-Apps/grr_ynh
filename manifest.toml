@@ -5,7 +5,7 @@ name = "Grr"
 description.en = "Tool for booking meeting rooms or other resources"
 description.fr = "Outil de réservation de salles de réunion ou d'autres ressources"
 
-version = "4.6.4~ynh1"
+version = "4.6.5~ynh1"
 
 maintainers = ["Sébastien Menentrier"]
 
@@ -46,8 +46,8 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://github.com/JeromeDevome/GRR/archive/refs/tags/v4.6.4.tar.gz"
-        sha256 = "d642ef9adfbae2fef7734171faca4dff765c694fa9cb631b4291d9c225fef03d"
+        url = "https://github.com/JeromeDevome/GRR/archive/refs/tags/v4.6.5.tar.gz"
+        sha256 = "78deaf50c903520c56d173541381c037d30474ef81ffa902b639544d7b6ab4d8"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
